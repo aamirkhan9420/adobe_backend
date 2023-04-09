@@ -10,9 +10,8 @@ postRoute.post("/", async (req, res) => {
         await newPost.save()
         res.send({ "msg": "new post added",status:"success" })
     } catch (error) {
-        res.send({ "msg": "make sure minimum length of content atleast 1 and maximum length of content 300", status:"warning"})
+        res.send({ "msg": "Make sure minimum length of content atleast 1 and maximum length of content 300", status:"warning"})
     }
-
 })
 
 postRoute.get("/:id", async (req, res) => {
